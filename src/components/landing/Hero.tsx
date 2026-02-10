@@ -15,22 +15,22 @@ const Hero = ({
     </>
   ),
   subtitle = "Don't let soot settle into your Texas home. Our specialized dry extraction and HEPA filtration systems target microscopic soot particles, restoring walls and ceilings to their original state while neutralizing lingering Austin fire odors.",
-  image = "https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?auto=format&fit=crop&q=80"
+  image = "https://images.unsplash.com/photo-1544717305-27a734ef4163?auto=format&fit=crop&q=80"
 }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Image with Unique Overlay */}
       <div className="absolute inset-0 z-0">
-        <img src={image} alt="Soot Removal Austin" className="w-full h-full object-cover" />
-        {/* UNIQUE OVERLAY IMAGE: Using an abstract fire/ash/ember texture overlay for the niche */}
-        <div className="absolute inset-0 opacity-30 mix-blend-overlay overflow-hidden">
+        <img src={image} alt="Soot Removal Austin" className="w-full h-full object-cover brightness-50" />
+        {/* UNIQUE OVERLAY IMAGE: Using an abstract smoky/charcoal texture overlay */}
+        <div className="absolute inset-0 opacity-40 mix-blend-multiply overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1544717305-27a734ef4163?auto=format&fit=crop&q=80"
-            alt="Fire Ash Ember Overlay"
-            className="w-full h-full object-cover scale-150 animate-pulse"
+            src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80"
+            alt="Dark Smoke Texture Overlay"
+            className="w-full h-full object-cover scale-150"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/98 via-slate-900/85 to-amber-950/50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/100 via-slate-950/90 to-amber-950/80" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
